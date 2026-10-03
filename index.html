@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andheri Juhu Property 53 — Find Your Place in Mumbai | Buy Sell Rent</title>
+<meta name="description" content="Premium Real Estate in Andheri, Juhu & Mumbai. Buy | Sell | Rent Residential & Commercial. Sea-view villas, designer apartments, offices.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='black'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>53</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0A0A0A',
+        ink2: '#141414',
+        cream: '#F7F6F3',
+        cream2: '#EFEDE8',
+        line: '#E8E6E1',
+        muted: '#8A8883',
+        gold: '#B9975B',
+        goldlight: '#E9DCC3'
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Manrope', 'sans-serif']
+      },
+      letterSpacing: { widest2: '0.28em' }
+    }
+  }
+}
+</script>
+<style>
+  *{ -webkit-tap-highlight-color: transparent; }
+  html{ scroll-behavior:auto; }
+  html.lenis, html.lenis body{ height:auto; }
+  .lenis.lenis-smooth{ scroll-behavior:auto !important; }
+  body{ font-family:'Manrope',sans-serif; background:#fff; color:#0A0A0A; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+  ::selection{ background:#0A0A0A; color:#fff; }
+  ::-webkit-scrollbar{ width:8px; }
+  ::-webkit-scrollbar-track{ background:#F7F6F3; }
+  ::-webkit-scrollbar-thumb{ background:#0A0A0A; border-radius:20px; }
+  .no-scrollbar::-webkit-scrollbar{ display:none; }
+  .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+
+  /* Preloader */
+  #preloader{ position:fixed; inset:0; z-index:100; background:#0A0A0A; display:flex; align-items:center; justify-content:center; flex-direction:column; transition:transform 1s cubic-bezier(.76,0,.24,1); }
+  #preloader.done{ transform:translateY(-100%); }
+  .loader-line{ width:180px; height:1px; background:rgba(255,255,255,.15); position:relative; overflow:hidden; margin-top:24px; }
+  .loader-line span{ position:absolute; inset:0; background:#fff; transform-origin:left; transform:scaleX(0); }
+
+  /* Custom cursor */
+  #cursor-dot, #cursor-ring{ position:fixed; top:0; left:0; pointer-events:none; z-index:99; border-radius:50%; }
+  #cursor-dot{ width:6px; height:6px; background:#0A0A0A; transform:translate(-50%,-50%); }
+  #cursor-ring{ width:36px; height:36px; border:1px solid rgba(10,10,10,.25); transform:translate(-50%,-50%); transition:width .3s,height .3s,background .3s,border .3s; }
+  #cursor-ring.hovering{ width:72px; height:72px; background:rgba(10,10,10,.06); border-color:rgba(10,10,10,.15); backdrop-filter:blur(2px); }
+  @media (hover:none){ #cursor-dot,#cursor-ring{ display:none; } }
+
+  /* Hero text */
+  .char{ display:inline-block; transform:translateY(110%); opacity:0; }
+  .hero-mask{ overflow:hidden; display:block; }
+
+  /* Image reveal */
+  .reveal-img{ clip-path:inset(8% 6% 8% 6% round 24px); transform:scale(1.02); transition:clip-path 1.2s cubic-bezier(.16,1,.3,1), transform 1.2s cubic-bezier(.16,1,.3,1); }
+  .reveal-img.in{ clip-path:inset(0 0 0 0 round 24px); transform:scale(1); }
+
+  /* Marquee */
+  @keyframes marquee{ 0%{ transform:translateX(0);} 100%{ transform:translateX(-50%);} }
+  .marquee-track{ animation:marquee 28s linear infinite; }
+  .marquee-track:hover{ animation-play-state:paused; }
+
+  @keyframes kenburns{ 0%{ transform:scale(1);} 100%{ transform:scale(1.12);} }
+  .kenburns{ animation:kenburns 8s ease-in-out infinite alternate; }
+
+  @keyframes floaty{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
+  .floaty{ animation:floaty 5s ease-in-out infinite; }
+  .floaty-delay{ animation:floaty 6s ease-in-out infinite; animation-delay:1.2s; }
+
+  @keyframes scrollHint{ 0%{ transform:scaleY(0); transform-origin:top;} 45%{ transform:scaleY(1); transform-origin:top;} 55%{ transform:scaleY(1); transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bottom;} }
+  .scroll-line{ animation:scrollHint 2.2s cubic-bezier(.76,0,.24,1) infinite; }
+
+  @keyframes pulse-ring{ 0%{ box-shadow:0 0 0 0 rgba(37,211,102,.4);} 70%{ box-shadow:0 0 0 16px rgba(37,211,102,0);} 100%{ box-shadow:0 0 0 0 rgba(37,211,102,0);} }
+  .wa-pulse{ animation:pulse-ring 2.4s infinite; }
+
+  /* Tilt */
+  .tilt{ transform-style:preserve-3d; will-change:transform; transition:box-shadow .4s; }
+  .tilt-inner{ transform:translateZ(30px); }
+
+  /* Cards */
+  .prop-card{ transition:transform .6s cubic-bezier(.16,1,.3,1), box-shadow .6s; }
+  .prop-card:hover{ transform:translateY(-8px); box-shadow:0 30px 60px -20px rgba(0,0,0,.18); }
+  .prop-card img{ transition:transform 1.2s cubic-bezier(.16,1,.3,1); }
+  .prop-card:hover img{ transform:scale(1.07); }
+
+  .loc-card img{ transition:transform 1.4s cubic-bezier(.16,1,.3,1), filter .6s; }
+  .loc-card:hover img{ transform:scale(1.08); }
+
+  .btn-arrow{ transition:transform .4s cubic-bezier(.16,1,.3,1); }
+  .group:hover .btn-arrow{ transform:translate(4px,-4px); }
+
+  /* Sticky showcase */
+  .stack-card{ position:sticky; top:90px; }
+
+  /* Reels progress */
+  @keyframes reelProgress{ from{ width:0%; } to{ width:100%; } }
+  .reel-active .reel-progress{ animation:reelProgress 6s linear forwards; }
+  .reel-card{ scroll-snap-align:center; }
+  .reels-scroll{ scroll-snap-type:x mandatory; }
+
+  /* Inputs */
+  .lux-input{ background:#F7F6F3; border:1px solid #E8E6E1; transition:all .3s; }
+  .lux-input:focus{ background:#fff; border-color:#0A0A0A; outline:none; box-shadow:0 0 0 3px rgba(10,10,10,.06); }
+  select.lux-input{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; }
+
+  /* Modal */
+  .modal-bg{ background:rgba(10,10,10,.55); backdrop-filter:blur(12px); }
+  .modal-panel{ transform:translateY(40px) scale(.98); opacity:0; transition:all .5s cubic-bezier(.16,1,.3,1); }
+  .modal-open .modal-panel{ transform:translateY(0) scale(1); opacity:1; }
+
+  /* Testimonial */
+  .testi-track{ transition:transform .8s cubic-bezier(.16,1,.3,1); }
+
+  /* Nav */
+  #nav{ transition:all .5s cubic-bezier(.16,1,.3,1); }
+  #nav.scrolled{ background:rgba(255,255,255,.85); backdrop-filter:blur(18px); border-bottom:1px solid rgba(0,0,0,.06); }
+  #nav.scrolled .nav-ink{ color:#0A0A0A !important; }
+  #nav.scrolled .nav-logo-box{ background:#0A0A0A; color:#fff; }
+  #nav.hidden-nav{ transform:translateY(-100%); }
+
+  .link-underline{ position:relative; }
+  .link-underline::after{ content:''; position:absolute; left:0; bottom:-4px; width:100%; height:1px; background:currentColor; transform:scaleX(0); transform-origin:right; transition:transform .4s cubic-bezier(.16,1,.3,1); }
+  .link-underline:hover::after{ transform:scaleX(1); transform-origin:left; }
+
+  /* Tab */
+  .tab-btn{ transition:all .4s; }
+  .tab-btn.active{ background:#0A0A0A; color:#fff; border-color:#0A0A0A; }
+
+  /* Showcase text outline */
+  .outline-text{ -webkit-text-stroke:1px rgba(255,255,255,.4); color:transparent; }
+
+  /* Toast */
+  #toast{ transition:all .5s cubic-bezier(.16,1,.3,1); }
+
+  /* Expand panels */
+  @media(min-width:768px){
+    .expand-panel{ transition:flex .8s cubic-bezier(.16,1,.3,1); flex:1; }
+    .expand-wrap:hover .expand-panel{ flex:.85; }
+    .expand-wrap .expand-panel:hover{ flex:1.6; }
+  }
+
+  .gold-gradient{ background:linear-gradient(135deg,#B9975B 0%,#E9DCC3 50%,#B9975B 100%); }
+  .glass{ background:rgba(255,255,255,.7); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+</style>
+</head>
+<body class="bg-white text-ink">
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="text-center">
+    <div class="w-16 h-16 mx-auto rounded-2xl bg-white text-black flex items-center justify-center font-serif text-3xl font-medium">53</div>
+    <p class="text-white/80 text-[11px] tracking-widest2 mt-6 font-light">ANDHERI&nbsp;&nbsp;JUHU&nbsp;&nbsp;PROPERTY</p>
+    <p class="font-serif text-white text-2xl mt-2 italic font-light">Find Your Place in Mumbai</p>
+    <div class="loader-line mx-auto"><span id="loaderBar"></span></div>
+    <p id="loaderPct" class="text-white/40 text-xs mt-3 font-light">0%</p>
+  </div>
+</div>
+
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<div id="progressBar" class="fixed top-0 left-0 h-[2px] bg-ink z-[90] w-full origin-left" style="transform:scaleX(0)"></div>
+
+<!-- NAV -->
+<nav id="nav" class="fixed top-0 left-0 right-0 z-[80] px-5 md:px-10 py-4 md:py-5">
+  <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+    <a href="#top" data-scroll class="flex items-center gap-3 group">
+      <div class="nav-logo-box w-11 h-11 rounded-xl bg-white/15 backdrop-blur border border-white/20 text-white flex items-center justify-center font-serif text-xl transition-all duration-500">53</div>
+      <div class="leading-none">
+        <p class="nav-ink text-white text-[13px] font-semibold tracking-[0.18em]">ANDHERI JUHU</p>
+        <p class="nav-ink text-white/70 text-[10px] tracking-[0.32em] mt-1">PROPERTY 53 • MUMBAI</p>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-[12px] tracking-[0.14em] font-medium">
+      <a href="#featured" data-scroll class="nav-ink text-white/90 link-underline">PROPERTIES</a>
+      <a href="#services" data-scroll class="nav-ink text-white/90 link-underline">BUY • SELL • RENT</a>
+      <a href="#locations" data-scroll class="nav-ink text-white/90 link-underline">LOCATIONS</a>
+      <a href="#showcase" data-scroll class="nav-ink text-white/90 link-underline">SHOWCASE</a>
+      <a href="#reels" data-scroll class="nav-ink text-white/90 link-underline">REELS</a>
+      <a href="#contact" data-scroll class="nav-ink text-white/90 link-underline">CONTACT</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:+919820115353" class="magnetic hidden md:flex w-11 h-11 rounded-full border border-white/25 items-center justify-center nav-ink text-white hover:bg-white hover:!text-black transition-all">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="https://wa.me/919820115353?text=Hi%20Property%2053%2C%20I%20want%20to%20explore%20properties%20in%20Andheri%20%2F%20Juhu" target="_blank" class="magnetic hidden sm:inline-flex items-center gap-2 bg-white text-black text-[12px] font-semibold tracking-wide px-5 py-3 rounded-full hover:bg-ink hover:text-white transition-all duration-300">
+        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> WhatsApp Us
+      </a>
+      <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-full bg-white/15 backdrop-blur border border-white/20 text-white flex flex-col items-center justify-center gap-[5px]">
+        <span class="w-5 h-[1.5px] bg-current block transition-all"></span>
+        <span class="w-5 h-[1.5px] bg-current block transition-all"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 z-[85] bg-ink text-white hidden flex-col justify-center px-8" style="transition:opacity .4s;">
+  <button id="menuClose" class="absolute top-6 right-6 w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-xl">✕</button>
+  <p class="text-[11px] tracking-widest2 text-white/40 mb-6">MENU</p>
+  <div class="space-y-2 font-serif text-4xl font-light">
+    <a href="#featured" data-scroll class="block py-2 border-b border-white/10 hover:pl-4 transition-all">Properties</a>
+    <a href="#services" data-scroll class="block py-2 border-b border-white/10 hover:pl-4 transition-all">Buy • Sell • Rent</a>
+    <a href="#locations" data-scroll class="block py-2 border-b border-white/10 hover:pl-4 transition-all">Locations</a>
+    <a href="#showcase" data-scroll class="block py-2 border-b border-white/10 hover:pl-4 transition-all">Showcase</a>
+    <a href="#contact" data-scroll class="block py-2 hover:pl-4 transition-all">Contact</a>
+  </div>
+  <div class="flex gap-3 mt-8">
+    <a href="https://wa.me/919820115353" target="_blank" class="flex-1 bg-white text-black text-center py-4 rounded-full font-semibold text-sm">WhatsApp</a>
+    <a href="tel:+919820115353" class="flex-1 border border-white/20 text-center py-4 rounded-full font-semibold text-sm">Call Now</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header id="top" class="relative min-h-[108vh] flex flex-col overflow-hidden bg-ink">
+  <div class="absolute inset-0 overflow-hidden">
+    <img id="heroBg" src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=2000&auto=format&fit=crop" alt="Mumbai Sea Link" class="w-full h-[120%] object-cover opacity-0 scale-110">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/70"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent"></div>
+  </div>
+
+  <!-- floating glass stat cards (desktop) -->
+  <div class="hidden xl:block absolute right-[6%] top-[28%] z-20 floaty">
+    <div class="glass rounded-2xl p-4 flex items-center gap-4 shadow-2xl w-[260px]" data-reveal>
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=400&auto=format&fit=crop" class="w-16 h-16 rounded-xl object-cover" alt="">
+      <div><p class="text-[11px] tracking-widest text-muted">JUHU SEA VIEW</p><p class="font-serif text-xl">₹8.5 Cr <span class="text-xs font-sans text-muted">• Sold</span></p></div>
+    </div>
+  </div>
+  <div class="hidden xl:block absolute right-[10%] top-[52%] z-20 floaty-delay">
+    <div class="bg-white rounded-2xl p-4 flex items-center gap-3 shadow-2xl w-[230px]">
+      <div class="w-10 h-10 rounded-full bg-ink text-white flex items-center justify-center text-sm">★</div>
+      <div><p class="text-sm font-semibold">4.9 / 5 Rating</p><p class="text-[11px] text-muted">320+ Happy Families</p></div>
+    </div>
+  </div>
+
+  <div class="relative z-10 flex-1 flex flex-col justify-center max-w-[1400px] mx-auto w-full px-5 md:px-10 pt-32 pb-10">
+    <div class="flex items-center gap-3 mb-6 hero-fade opacity-0">
+      <span class="h-[1px] w-12 bg-white/60"></span>
+      <p class="text-white/80 text-[11px] md:text-xs tracking-[0.3em] font-light">ANDHERI • JUHU • BANDRA • MUMBAI</p>
+    </div>
+    <h1 class="font-serif font-light text-white leading-[0.95] text-[13vw] sm:text-[9vw] lg:text-[7.2vw] max-w-[900px]">
+      <span class="hero-mask"><span class="hero-line block">Find Your</span></span>
+      <span class="hero-mask"><span class="hero-line block italic text-white">Place <span class="not-italic font-normal">in</span> <span class="italic">Mumbai</span><span class="text-gold">.</span></span></span>
+    </h1>
+    <p class="hero-fade opacity-0 text-white/70 max-w-[520px] mt-6 font-light leading-relaxed text-[15px] md:text-lg">Sea-view residences, designer apartments & prime commercial spaces — curated by Mumbai's most trusted boutique advisory in Andheri & Juhu.</p>
+    <div class="hero-fade opacity-0 flex flex-wrap items-center gap-4 mt-9">
+      <a href="#featured" data-scroll class="magnetic group inline-flex items-center gap-3 bg-white text-ink px-8 py-4 rounded-full text-sm font-semibold tracking-wide hover:bg-gold hover:text-white transition-all duration-300">
+        Explore Properties
+        <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+      <a href="https://wa.me/919820115353?text=Hi%20Property%2053%2C%20I%27d%20like%20to%20discuss%20a%20property" target="_blank" class="magnetic inline-flex items-center gap-3 border border-white/30 text-white px-8 py-4 rounded-full text-sm font-medium backdrop-blur hover:bg-white/10 transition-all">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.9 7c0 5.45-4.45 9.87-9.9 9.87m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.47-8.41"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <div class="hero-fade opacity-0 flex items-center gap-8 mt-10 text-white/70 text-sm font-light">
+      <div><span class="font-serif text-2xl text-white counter" data-target="15">0</span>+ <span class="text-xs tracking-widest">YEARS</span></div>
+      <div class="w-[1px] h-8 bg-white/20"></div>
+      <div><span class="font-serif text-2xl text-white counter" data-target="850">0</span>+ <span class="text-xs tracking-widest">DEALS CLOSED</span></div>
+      <div class="w-[1px] h-8 bg-white/20"></div>
+      <div><span class="font-serif text-2xl text-white counter" data-target="1200">0</span>Cr+ <span class="text-xs tracking-widest">SOLD</span></div>
+    </div>
+  </div>
+
+  <!-- SEARCH BAR -->
+  <div class="relative z-20 max-w-[1200px] mx-auto w-full px-5 md:px-10 pb-8 -mt-2">
+    <div id="searchBar" class="hero-fade opacity-0 bg-white/95 backdrop-blur-xl rounded-[24px] p-4 md:p-5 shadow-[0_30px_80px_-20px_rgba(0,0,0,.5)] border border-white/50">
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+        <div class="col-span-1">
+          <label class="text-[10px] tracking-[0.2em] text-muted font-semibold ml-3">PURPOSE</label>
+          <select id="fPurpose" class="lux-input w-full mt-1 rounded-xl px-4 py-3 text-sm font-medium">
+            <option value="all">Buy / Rent / All</option><option value="Buy">Buy</option><option value="Rent">Rent</option><option value="Commercial">Commercial</option>
+          </select>
+        </div>
+        <div class="col-span-1">
+          <label class="text-[10px] tracking-[0.2em] text-muted font-semibold ml-3">LOCATION</label>
+          <select id="fLocation" class="lux-input w-full mt-1 rounded-xl px-4 py-3 text-sm font-medium">
+            <option value="all">All Mumbai</option><option>Andheri West</option><option>Juhu</option><option>Bandra West</option><option>Versova</option><option>Powai</option><option>Goregaon</option>
+          </select>
+        </div>
+        <div class="col-span-1">
+          <label class="text-[10px] tracking-[0.2em] text-muted font-semibold ml-3">TYPE</label>
+          <select id="fType" class="lux-input w-full mt-1 rounded-xl px-4 py-3 text-sm font-medium">
+            <option value="all">All Types</option><option>Apartment</option><option>Penthouse</option><option>Villa</option><option>Commercial</option>
+          </select>
+        </div>
+        <div class="col-span-1">
+          <label class="text-[10px] tracking-[0.2em] text-muted font-semibold ml-3">BUDGET</label>
+          <select id="fBudget" class="lux-input w-full mt-1 rounded-xl px-4 py-3 text-sm font-medium">
+            <option value="all">Any Budget</option><option value="under2">Under ₹2 Cr</option><option value="2-5">₹2 – ₹5 Cr</option><option value="5-10">₹5 – ₹10 Cr</option><option value="10plus">₹10 Cr+</option><option value="rent">Rental (any)</option>
+          </select>
+        </div>
+        <button onclick="applySearch(true)" class="magnetic col-span-2 lg:col-span-1 bg-ink text-white rounded-xl py-3 px-6 text-sm font-semibold tracking-wide hover:bg-black flex items-center justify-center gap-2 group">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          Search <span id="searchCount" class="text-[11px] bg-white/15 px-2 py-0.5 rounded-full">9</span>
+        </button>
+      </div>
+    </div>
+    <div class="flex justify-center mt-5 pb-2">
+      <div class="flex flex-col items-center gap-2 text-white/60">
+        <span class="text-[10px] tracking-[0.3em]">SCROLL</span>
+        <div class="w-[1px] h-10 bg-white/20 overflow-hidden"><div class="w-full h-full bg-white scroll-line"></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="bg-ink text-white py-4 overflow-hidden border-y border-white/10">
+  <div class="marquee-track flex whitespace-nowrap gap-0 w-max">
+    <div class="flex items-center gap-8 pr-8 text-[12px] tracking-[0.25em] font-light text-white/70">
+      <span>ANDHERI WEST</span><span class="text-gold">✦</span><span>JUHU SEA VIEW</span><span class="text-gold">✦</span><span>VERSOVA</span><span class="text-gold">✦</span><span>BANDRA WEST</span><span class="text-gold">✦</span><span>LOKHANDWALA</span><span class="text-gold">✦</span><span>POWAI</span><span class="text-gold">✦</span><span>GOREGAON</span><span class="text-gold">✦</span><span>FOUR BUNGALOWS</span><span class="text-gold">✦</span>
+    </div>
+    <div class="flex items-center gap-8 pr-8 text-[12px] tracking-[0.25em] font-light text-white/70">
+      <span>ANDHERI WEST</span><span class="text-gold">✦</span><span>JUHU SEA VIEW</span><span class="text-gold">✦</span><span>VERSOVA</span><span class="text-gold">✦</span><span>BANDRA WEST</span><span class="text-gold">✦</span><span>LOKHANDWALA</span><span class="text-gold">✦</span><span>POWAI</span><span class="text-gold">✦</span><span>GOREGAON</span><span class="text-gold">✦</span><span>FOUR BUNGALOWS</span><span class="text-gold">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FEATURED ============ -->
+<section id="featured" class="py-24 md:py-32 px-5 md:px-10 bg-white">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <div data-reveal>
+        <p class="text-[11px] tracking-[0.3em] text-muted font-semibold">01 — CURATED FOR YOU</p>
+        <h2 class="font-serif font-light text-5xl md:text-7xl mt-3 leading-[0.95]">Featured<br><span class="italic">Properties</span></h2>
+      </div>
+      <div class="max-w-sm" data-reveal>
+        <p class="text-muted font-light leading-relaxed text-[15px]">Handpicked sea-facing villas, sky penthouses and high-yield commercial assets across Andheri–Juhu.</p>
+        <div class="flex gap-2 mt-5 flex-wrap">
+          <button class="tab-btn active text-xs px-5 py-2.5 rounded-full border border-line" data-filter="all" onclick="setTab(this,'all')">All</button>
+          <button class="tab-btn text-xs px-5 py-2.5 rounded-full border border-line" data-filter="Buy" onclick="setTab(this,'Buy')">Buy</button>
+          <button class="tab-btn text-xs px-5 py-2.5 rounded-full border border-line" data-filter="Rent" onclick="setTab(this,'Rent')">Rent</button>
+          <button class="tab-btn text-xs px-5 py-2.5 rounded-full border border-line" data-filter="Commercial" onclick="setTab(this,'Commercial')">Commercial</button>
+        </div>
+      </div>
+    </div>
+    <div id="propGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" style="perspective:1200px;"></div>
+    <div id="noResult" class="hidden text-center py-16">
+      <p class="font-serif text-3xl italic text-muted">No matches — try a wider search</p>
+      <button onclick="resetFilters()" class="mt-4 text-sm underline underline-offset-4">Reset filters</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUY SELL RENT ============ -->
+<section id="services" class="py-24 md:py-32 px-5 md:px-10 bg-cream">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14" data-reveal>
+      <p class="text-[11px] tracking-[0.3em] text-muted font-semibold">02 — BUY • SELL • RENT</p>
+      <h2 class="font-serif font-light text-5xl md:text-6xl mt-4">One Partner. <span class="italic">Every Move.</span></h2>
+      <p class="text-muted font-light mt-4">End-to-end advisory with negotiation, legal, loan and registration support.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5 md:gap-6" style="perspective:1200px;">
+      <!-- BUY -->
+      <div class="tilt group bg-white rounded-[28px] overflow-hidden border border-line" data-reveal>
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=900&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" alt="Buy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute top-4 left-4 bg-white/90 backdrop-blur text-[11px] tracking-widest px-4 py-2 rounded-full font-semibold">BUY</span>
+          <span class="absolute bottom-4 left-5 font-serif text-white text-3xl italic">Own it.</span>
+        </div>
+        <div class="p-7">
+          <ul class="space-y-3 text-sm font-light text-ink/80">
+            <li class="flex gap-3"><span class="text-gold">—</span> Off-market & verified listings only</li>
+            <li class="flex gap-3"><span class="text-gold">—</span> Price benchmarking & negotiation</li>
+            <li class="flex gap-3"><span class="text-gold">—</span> Home loan + legal + registration</li>
+          </ul>
+          <button onclick="openEnquiry('Buy a Property')" class="magnetic mt-6 w-full bg-ink text-white py-4 rounded-full text-sm font-semibold hover:bg-black flex items-center justify-center gap-2">Start Buying <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></button>
+        </div>
+      </div>
+      <!-- SELL -->
+      <div class="tilt group bg-ink text-white rounded-[28px] overflow-hidden md:-mt-6 md:mb-[-1.5rem] shadow-2xl" data-reveal>
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=900&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" alt="Sell">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/10"></div>
+          <span class="absolute top-4 left-4 gold-gradient text-ink text-[11px] tracking-widest px-4 py-2 rounded-full font-bold">SELL • BEST PRICE</span>
+          <span class="absolute bottom-4 left-5 font-serif text-3xl italic">Maximize it.</span>
+        </div>
+        <div class="p-7">
+          <ul class="space-y-3 text-sm font-light text-white/80">
+            <li class="flex gap-3"><span class="text-gold">—</span> Free valuation in 24 hours</li>
+            <li class="flex gap-3"><span class="text-gold">—</span> Cinematic shoot + reels marketing</li>
+            <li class="flex gap-3"><span class="text-gold">—</span> Qualified buyers, fastest closure</li>
+          </ul>
+          <button onclick="openValuation()" class="magnetic mt-6 w-full bg-white text-ink py-4 rounded-full text-sm font-semibold hover:bg-gold hover:text-white transition-all flex items-center justify-center gap-2">Get Free Valuation <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></button>
+        </div>
+      </div>
+      <!-- RENT -->
+      <div class="tilt group bg-white rounded-[28px] overflow-hidden border border-line" data-reveal>
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=900&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" alt="Rent">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute top-4 left-4 bg-white/90 backdrop-blur text-[11px] tracking-widest px-4 py-2 rounded-full font-semibold">RENT</span>
+          <span class="absolute bottom-4 left-5 font-serif text-white text-3xl italic">Live in it.</span>
+        </div>
+        <div class="p-7">
+          <ul class="space-y-3 text-sm font-light text-ink/80">
+            <li class="flex gap-3"><span class="text-gold">—</span> Verified tenants & owners</li>
+            <li class="flex gap-3"><span class="text-gold">—</span> Zero-hassle paperwork & police NOC</li>
+            <li class="flex gap-3"><span class="text-gold">—</span> Corporate leases & co-living</li>
+          </ul>
+          <button onclick="openEnquiry('Rent a Property')" class="magnetic mt-6 w-full border border-ink py-4 rounded-full text-sm font-semibold hover:bg-ink hover:text-white transition-all flex items-center justify-center gap-2">Find Rentals <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESIDENTIAL & COMMERCIAL ============ -->
+<section id="segments" class="py-24 md:py-32 bg-white px-5 md:px-10">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="flex flex-col md:flex-row justify-between md:items-end gap-4 mb-10" data-reveal>
+      <div><p class="text-[11px] tracking-[0.3em] text-muted font-semibold">03 — PORTFOLIO</p>
+      <h2 class="font-serif font-light text-5xl md:text-6xl mt-3">Residential <span class="italic text-muted">&</span> Commercial</h2></div>
+      <p class="text-muted font-light max-w-sm text-[15px]">Hover to explore. Two specialised desks, one standard — uncompromising.</p>
+    </div>
+    <div class="expand-wrap flex flex-col md:flex-row gap-4 h-auto md:h-[620px]" data-reveal>
+      <div class="expand-panel relative rounded-[28px] overflow-hidden min-h-[420px] group cursor-pointer" onclick="filterAndGo('all','Apartment')">
+        <img data-parallax src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" class="absolute inset-0 w-full h-[120%] object-cover" alt="Residential">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+        <div class="absolute top-6 left-6 flex gap-2"><span class="bg-white text-ink text-[11px] px-4 py-2 rounded-full font-semibold tracking-widest">RESIDENTIAL</span><span class="bg-white/20 backdrop-blur text-white text-[11px] px-4 py-2 rounded-full">120+ listings</span></div>
+        <div class="absolute bottom-0 p-8 text-white">
+          <h3 class="font-serif text-4xl md:text-5xl font-light">Homes that <span class="italic">hold light.</span></h3>
+          <p class="text-white/70 font-light text-sm mt-3 max-w-md">Sea-view apartments • Sky villas • Penthouses • Bungalows in Juhu, Andheri, Bandra.</p>
+          <div class="flex flex-wrap gap-2 mt-5 text-[12px]"><span class="border border-white/25 rounded-full px-4 py-2">2 / 3 / 4 BHK</span><span class="border border-white/25 rounded-full px-4 py-2">Duplex</span><span class="border border-white/25 rounded-full px-4 py-2">Penthouses</span><span class="bg-white text-ink rounded-full px-4 py-2 font-semibold">Explore →</span></div>
+        </div>
+      </div>
+      <div class="expand-panel relative rounded-[28px] overflow-hidden min-h-[420px] group cursor-pointer" onclick="filterAndGo('Commercial','all')">
+        <img data-parallax src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop" class="absolute inset-0 w-full h-[120%] object-cover" alt="Commercial">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+        <div class="absolute top-6 left-6 flex gap-2"><span class="bg-ink text-white text-[11px] px-4 py-2 rounded-full font-semibold tracking-widest border border-white/20">COMMERCIAL</span><span class="bg-white/20 backdrop-blur text-white text-[11px] px-4 py-2 rounded-full">45+ assets</span></div>
+        <div class="absolute bottom-0 p-8 text-white">
+          <h3 class="font-serif text-4xl md:text-5xl font-light">Spaces that <span class="italic">mean business.</span></h3>
+          <p class="text-white/70 font-light text-sm mt-3 max-w-md">Grade-A offices • Retail high-street • Pre-leased assets with 6–8% yields.</p>
+          <div class="flex flex-wrap gap-2 mt-5 text-[12px]"><span class="border border-white/25 rounded-full px-4 py-2">Offices</span><span class="border border-white/25 rounded-full px-4 py-2">Retail</span><span class="border border-white/25 rounded-full px-4 py-2">Pre-leased</span><span class="bg-white text-ink rounded-full px-4 py-2 font-semibold">Explore →</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATIONS ============ -->
+<section id="locations" class="py-24 md:py-32 px-5 md:px-10 bg-ink text-white overflow-hidden">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12" data-reveal>
+      <div><p class="text-[11px] tracking-[0.3em] text-white/40 font-semibold">04 — MUMBAI LOCATIONS</p>
+      <h2 class="font-serif font-light text-5xl md:text-7xl mt-3">Where Mumbai<br><span class="italic text-white/90">lives best.</span></h2></div>
+      <p class="text-white/50 font-light max-w-sm text-[15px]">Tap a neighbourhood to instantly filter live properties. Deep local expertise, street by street.</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      <div class="loc-card group relative rounded-[24px] overflow-hidden h-[280px] md:h-[380px] cursor-pointer col-span-2 lg:col-span-1" onclick="filterAndGo('all','all','Andheri West')" data-reveal>
+        <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Andheri">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-0 p-6 w-full flex items-end justify-between"><div><p class="text-[11px] tracking-[0.25em] text-white/60">MOST DEMANDED</p><h3 class="font-serif text-3xl md:text-4xl mt-1">Andheri West</h3><p class="text-white/60 text-sm font-light mt-1">42 listings • ₹24k / sq.ft avg</p></div><span class="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">→</span></div>
+      </div>
+      <div class="loc-card group relative rounded-[24px] overflow-hidden h-[280px] md:h-[380px] cursor-pointer" onclick="filterAndGo('all','all','Juhu')" data-reveal>
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Juhu">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-0 p-6"><p class="text-[11px] tracking-[0.25em] text-white/60">SEA FACING</p><h3 class="font-serif text-3xl mt-1">Juhu</h3><p class="text-white/60 text-sm font-light">28 listings • ₹42k / sq.ft</p></div>
+      </div>
+      <div class="loc-card group relative rounded-[24px] overflow-hidden h-[280px] md:h-[380px] cursor-pointer" onclick="filterAndGo('all','all','Bandra West')" data-reveal>
+        <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Bandra">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-0 p-6"><p class="text-[11px] tracking-[0.25em] text-white/60">LUXURY</p><h3 class="font-serif text-3xl mt-1">Bandra West</h3><p class="text-white/60 text-sm font-light">31 listings • ₹48k / sq.ft</p></div>
+      </div>
+      <div class="loc-card group relative rounded-[24px] overflow-hidden h-[240px] md:h-[300px] cursor-pointer" onclick="filterAndGo('all','all','Versova')" data-reveal>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Versova">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl">Versova</h3><p class="text-white/60 text-sm font-light">18 listings</p></div>
+      </div>
+      <div class="loc-card group relative rounded-[24px] overflow-hidden h-[240px] md:h-[300px] cursor-pointer" onclick="filterAndGo('all','all','Powai')" data-reveal>
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Powai">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl">Powai</h3><p class="text-white/60 text-sm font-light">22 listings</p></div>
+      </div>
+      <div class="loc-card group relative rounded-[24px] overflow-hidden h-[240px] md:h-[300px] cursor-pointer" onclick="filterAndGo('all','all','Goregaon')" data-reveal>
+        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Goregaon">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl">Goregaon</h3><p class="text-white/60 text-sm font-light">15 listings</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOWCASE (Cinematic sticky) ============ -->
+<section id="showcase" class="py-24 md:py-32 px-5 md:px-10 bg-cream">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-14" data-reveal>
+      <p class="text-[11px] tracking-[0.3em] text-muted font-semibold">05 — SIGNATURE SHOWCASE</p>
+      <h2 class="font-serif font-light text-5xl md:text-7xl mt-3">Cinematic <span class="italic">Showcase</span></h2>
+      <p class="text-muted font-light mt-4">Scroll — three trophy assets, presented like film stills.</p>
+    </div>
+
+    <div class="space-y-6">
+      <div class="stack-card rounded-[32px] overflow-hidden min-h-[82vh] flex items-end relative shadow-2xl" style="top:80px;" data-reveal>
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Showcase 1">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+        <span class="absolute top-8 left-8 font-serif text-7xl md:text-8xl outline-text">01</span>
+        <span class="absolute top-8 right-8 bg-white/15 backdrop-blur border border-white/20 text-white text-[11px] tracking-widest px-5 py-2.5 rounded-full">JUHU TARA • SEA VIEW</span>
+        <div class="relative p-8 md:p-14 text-white max-w-2xl">
+          <h3 class="font-serif font-light text-4xl md:text-6xl leading-[0.95]">The Sky Villa<br><span class="italic">Above the Sea</span></h3>
+          <p class="text-white/70 font-light mt-4">4 BHK • 3,200 sq.ft • Private terrace • Sunset deck • 2 car parks</p>
+          <div class="flex flex-wrap items-center gap-4 mt-7">
+            <span class="font-serif text-3xl">₹8.5 Cr</span>
+            <button onclick="openProperty(1)" class="magnetic bg-white text-ink px-7 py-3.5 rounded-full text-sm font-semibold">View Residence</button>
+            <a href="https://wa.me/919820115353?text=Hi%2C%20I%27m%20interested%20in%20Sky%20Villa%20Juhu%20%E2%82%B98.5Cr" target="_blank" class="border border-white/30 px-7 py-3.5 rounded-full text-sm backdrop-blur hover:bg-white/10">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-card rounded-[32px] overflow-hidden min-h-[82vh] flex items-end relative shadow-2xl" style="top:100px;" data-reveal>
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Showcase 2">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+        <span class="absolute top-8 left-8 font-serif text-7xl md:text-8xl outline-text">02</span>
+        <span class="absolute top-8 right-8 bg-white/15 backdrop-blur border border-white/20 text-white text-[11px] tracking-widest px-5 py-2.5 rounded-full">BANDRA WEST • PENTHOUSE</span>
+        <div class="relative p-8 md:p-14 text-white max-w-2xl">
+          <h3 class="font-serif font-light text-4xl md:text-6xl leading-[0.95]">Sunset Penthouse<br><span class="italic">with Infinity Pool</span></h3>
+          <p class="text-white/70 font-light mt-4">5 BHK • 4,800 sq.ft • Private pool • Home theatre • Sea glimpse</p>
+          <div class="flex flex-wrap items-center gap-4 mt-7">
+            <span class="font-serif text-3xl">₹14.5 Cr</span>
+            <button onclick="openProperty(5)" class="magnetic bg-white text-ink px-7 py-3.5 rounded-full text-sm font-semibold">View Penthouse</button>
+            <a href="https://wa.me/919820115353?text=Hi%2C%20interested%20in%20Bandra%20Penthouse" target="_blank" class="border border-white/30 px-7 py-3.5 rounded-full text-sm backdrop-blur hover:bg-white/10">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-card rounded-[32px] overflow-hidden min-h-[82vh] flex items-end relative shadow-2xl" style="top:120px;" data-reveal>
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Showcase 3">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+        <span class="absolute top-8 left-8 font-serif text-7xl md:text-8xl outline-text">03</span>
+        <span class="absolute top-8 right-8 bg-gold text-white text-[11px] tracking-widest px-5 py-2.5 rounded-full font-semibold">ANDHERI EAST • 7.2% YIELD</span>
+        <div class="relative p-8 md:p-14 text-white max-w-2xl">
+          <h3 class="font-serif font-light text-4xl md:text-6xl leading-[0.95]">Corporate Suite<br><span class="italic">Pre-leased Asset</span></h3>
+          <p class="text-white/70 font-light mt-4">2,400 sq.ft • MNC tenant • 9-yr lease • ₹1.85L / month rent</p>
+          <div class="flex flex-wrap items-center gap-4 mt-7">
+            <span class="font-serif text-3xl">₹3.1 Cr</span>
+            <button onclick="openProperty(4)" class="magnetic bg-white text-ink px-7 py-3.5 rounded-full text-sm font-semibold">View Asset</button>
+            <a href="https://wa.me/919820115353?text=Hi%2C%20interested%20in%20pre-leased%20office%20Andheri" target="_blank" class="border border-white/30 px-7 py-3.5 rounded-full text-sm backdrop-blur hover:bg-white/10">Enquire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section id="why" class="py-24 md:py-32 px-5 md:px-10 bg-white">
+  <div class="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+    <div data-reveal>
+      <p class="text-[11px] tracking-[0.3em] text-muted font-semibold">06 — WHY PROPERTY 53</p>
+      <h2 class="font-serif font-light text-5xl md:text-6xl mt-4 leading-[0.95]">Trusted where<br><span class="italic">trust is rare.</span></h2>
+      <p class="text-muted font-light mt-6 leading-relaxed">We are not a listing portal. We are a boutique, on-ground team living in Andheri–Juhu — walking every lane, verifying every title, negotiating like it's our own money.</p>
+      <div class="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-line">
+        <div><p class="font-serif text-4xl md:text-5xl"><span class="counter" data-target="15">0</span>+</p><p class="text-[11px] tracking-widest text-muted mt-2">YEARS IN<br>MUMBAI</p></div>
+        <div><p class="font-serif text-4xl md:text-5xl"><span class="counter" data-target="850">0</span>+</p><p class="text-[11px] tracking-widest text-muted mt-2">FAMILIES<br>SETTLED</p></div>
+        <div><p class="font-serif text-4xl md:text-5xl"><span class="counter" data-target="98">0</span>%</p><p class="text-[11px] tracking-widest text-muted mt-2">CLIENT<br>RETENTION</p></div>
+      </div>
+      <div class="mt-10 flex items-center gap-4 bg-cream rounded-2xl p-5">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" class="w-14 h-14 rounded-full object-cover" alt="Founder">
+        <div><p class="font-semibold text-sm">Team Property 53 — RERA Certified</p><p class="text-muted text-[13px] font-light">MahaRERA No. A51900000053 • Andheri West, Mumbai</p></div>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="bg-cream rounded-[24px] p-7 hover:bg-ink hover:text-white transition-all duration-500 group" data-reveal>
+        <div class="w-12 h-12 rounded-full bg-ink text-white group-hover:bg-white group-hover:text-ink flex items-center justify-center transition-all">✓</div>
+        <h4 class="font-semibold mt-5">100% Verified Titles</h4><p class="text-sm font-light mt-2 opacity-70">Legal due-diligence, OC/CC, society & loan clearance checked before we show.</p>
+      </div>
+      <div class="bg-cream rounded-[24px] p-7 hover:bg-ink hover:text-white transition-all duration-500 group sm:mt-8" data-reveal>
+        <div class="w-12 h-12 rounded-full bg-ink text-white group-hover:bg-white group-hover:text-ink flex items-center justify-center transition-all">◈</div>
+        <h4 class="font-semibold mt-5">Off-Market Access</h4><p class="text-sm font-light mt-2 opacity-70">First access to owner-direct Juhu & Andheri deals never listed online.</p>
+      </div>
+      <div class="bg-cream rounded-[24px] p-7 hover:bg-ink hover:text-white transition-all duration-500 group" data-reveal>
+        <div class="w-12 h-12 rounded-full bg-ink text-white group-hover:bg-white group-hover:text-ink flex items-center justify-center transition-all">₹</div>
+        <h4 class="font-semibold mt-5">True Price Intelligence</h4><p class="text-sm font-light mt-2 opacity-70">Live match with 500+ recent transactions. Never overpay again.</p>
+      </div>
+      <div class="bg-cream rounded-[24px] p-7 hover:bg-ink hover:text-white transition-all duration-500 group sm:mt-8" data-reveal>
+        <div class="w-12 h-12 rounded-full bg-ink text-white group-hover:bg-white group-hover:text-ink flex items-center justify-center transition-all">✦</div>
+        <h4 class="font-semibold mt-5">Cinematic Marketing</h4><p class="text-sm font-light mt-2 opacity-70">Drone, reels & staging that sell your home 2× faster at premium.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REELS / INSTAGRAM ============ -->
+<section id="reels" class="py-24 md:py-32 bg-ink text-white px-5 md:px-10 overflow-hidden">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="flex flex-col md:flex-row justify-between md:items-end gap-6 mb-10" data-reveal>
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[2px]"><div class="w-full h-full rounded-full bg-ink flex items-center justify-center text-sm font-serif">53</div></div>
+          <div><p class="text-sm font-semibold">@andheri.juhu.property53</p><p class="text-white/50 text-xs">48.2K followers • Mumbai Real Estate</p></div>
+          <a href="https://instagram.com" target="_blank" class="ml-2 text-xs border border-white/25 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all">Follow</a>
+        </div>
+        <h2 class="font-serif font-light text-5xl md:text-6xl mt-6">Property <span class="italic">Reels</span></h2>
+      </div>
+      <div class="flex items-center gap-3">
+        <button onclick="scrollReels(-1)" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">←</button>
+        <button onclick="scrollReels(1)" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">→</button>
+      </div>
+    </div>
+  </div>
+  <div id="reelsRow" class="reels-scroll flex gap-4 overflow-x-auto no-scrollbar px-5 md:px-10 pb-4 max-w-[1400px] mx-auto" data-reveal></div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="py-24 md:py-32 px-5 md:px-10 bg-white">
+  <div class="max-w-[1100px] mx-auto text-center">
+    <p class="text-[11px] tracking-[0.3em] text-muted font-semibold" data-reveal>07 — CLIENT STORIES</p>
+    <h2 class="font-serif font-light text-5xl md:text-6xl mt-4" data-reveal>Loved across <span class="italic">Mumbai.</span></h2>
+    <div class="flex items-center justify-center gap-2 mt-4" data-reveal>
+      <span class="text-gold text-lg">★★★★★</span><span class="text-sm text-muted">4.9 on Google • 320+ reviews</span>
+    </div>
+    <div class="relative mt-12 overflow-hidden rounded-[32px] bg-cream border border-line" data-reveal>
+      <div id="testiTrack" class="testi-track flex"></div>
+      <div class="flex items-center justify-between p-6 border-t border-line bg-white/60">
+        <div id="testiDots" class="flex gap-2"></div>
+        <div class="flex gap-3">
+          <button onclick="moveTesti(-1)" class="w-11 h-11 rounded-full border border-ink/15 flex items-center justify-center hover:bg-ink hover:text-white transition-all">←</button>
+          <button onclick="moveTesti(1)" class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center hover:bg-black transition-all">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="px-5 md:px-10 pb-24 bg-white">
+  <div class="max-w-[1400px] mx-auto bg-ink text-white rounded-[32px] overflow-hidden grid lg:grid-cols-2" data-reveal>
+    <div class="p-8 md:p-14 relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20" alt="">
+      <div class="absolute inset-0 bg-gradient-to-br from-ink via-ink/90 to-ink/70"></div>
+      <div class="relative">
+        <p class="text-[11px] tracking-[0.3em] text-white/50 font-semibold">08 — LET'S TALK</p>
+        <h2 class="font-serif font-light text-5xl md:text-6xl mt-4 leading-[0.95]">Your Mumbai<br><span class="italic">move starts here.</span></h2>
+        <p class="text-white/60 font-light mt-5 max-w-md">Share your requirement — get curated options on WhatsApp within 2 hours. No spam, only matches.</p>
+        <div class="space-y-4 mt-9">
+          <a href="tel:+919820115353" class="flex items-center gap-4 group"><span class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">☎</span><div><p class="text-xs text-white/50 tracking-widest">CALL US</p><p class="font-semibold">+91 98201 15353</p></div></a>
+          <a href="https://wa.me/919820115353" target="_blank" class="flex items-center gap-4 group"><span class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center">✆</span><div><p class="text-xs text-white/50 tracking-widest">WHATSAPP</p><p class="font-semibold">Chat instantly — online now</p></div></a>
+          <div class="flex items-center gap-4"><span class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center">◎</span><div><p class="text-xs text-white/50 tracking-widest">VISIT STUDIO</p><p class="font-light text-sm">Shop 53, Silver Arc, Veera Desai Rd,<br>Andheri West, Mumbai 400053</p></div></div>
+        </div>
+        <div class="mt-8 rounded-2xl overflow-hidden border border-white/10 h-[160px]">
+          <iframe title="map" src="https://www.google.com/maps?q=Veera+Desai+Road+Andheri+West+Mumbai&output=embed" class="w-full h-full grayscale invert-[0.9] contrast-[0.9]" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white text-ink p-8 md:p-14">
+      <h3 class="font-serif text-3xl md:text-4xl font-light">Request a <span class="italic">callback</span></h3>
+      <p class="text-muted text-sm font-light mt-2">Average response time: 11 minutes (9am – 10pm)</p>
+      <form id="leadForm" class="mt-8 space-y-4" onsubmit="submitLead(event)">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="text-[11px] tracking-widest text-muted font-semibold">FULL NAME *</label><input required id="leadName" type="text" placeholder="Aarav Mehta" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm"></div>
+          <div><label class="text-[11px] tracking-widest text-muted font-semibold">PHONE *</label><input required id="leadPhone" type="tel" pattern="[0-9+ ]{10,15}" placeholder="+91 98XXX XXXXX" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm"></div>
+        </div>
+        <div><label class="text-[11px] tracking-widest text-muted font-semibold">I WANT TO</label>
+          <div class="grid grid-cols-3 gap-2 mt-2">
+            <label class="cursor-pointer"><input type="radio" name="purpose" value="Buy" class="peer hidden" checked><span class="block text-center text-sm py-3 rounded-xl border border-line peer-checked:bg-ink peer-checked:text-white transition-all">Buy</span></label>
+            <label class="cursor-pointer"><input type="radio" name="purpose" value="Sell" class="peer hidden"><span class="block text-center text-sm py-3 rounded-xl border border-line peer-checked:bg-ink peer-checked:text-white transition-all">Sell</span></label>
+            <label class="cursor-pointer"><input type="radio" name="purpose" value="Rent" class="peer hidden"><span class="block text-center text-sm py-3 rounded-xl border border-line peer-checked:bg-ink peer-checked:text-white transition-all">Rent</span></label>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="text-[11px] tracking-widest text-muted font-semibold">LOCATION</label><select id="leadLoc" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm"><option>Andheri West</option><option>Juhu</option><option>Bandra West</option><option>Versova</option><option>Powai</option><option>Other Mumbai</option></select></div>
+          <div><label class="text-[11px] tracking-widest text-muted font-semibold">BUDGET</label><select id="leadBudget" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm"><option>Under ₹2 Cr</option><option>₹2 – ₹5 Cr</option><option>₹5 – ₹10 Cr</option><option>₹10 Cr+</option><option>Rental</option></select></div>
+        </div>
+        <div><label class="text-[11px] tracking-widest text-muted font-semibold">MESSAGE</label><textarea id="leadMsg" rows="3" placeholder="e.g. Looking for 3BHK sea-view in Juhu, ready to move..." class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm resize-none"></textarea></div>
+        <button type="submit" class="magnetic w-full bg-ink text-white py-4 rounded-full text-sm font-semibold hover:bg-black flex items-center justify-center gap-2">Send on WhatsApp <span>→</span></button>
+        <p class="text-[12px] text-muted text-center font-light">By submitting, you agree to be contacted on call / WhatsApp. 100% privacy.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-cream border-t border-line px-5 md:px-10 pt-16 pb-8">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-line">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-ink text-white flex items-center justify-center font-serif text-xl">53</div><div><p class="text-[13px] font-bold tracking-[0.15em]">ANDHERI JUHU</p><p class="text-[10px] tracking-[0.3em] text-muted">PROPERTY 53</p></div></div>
+        <p class="text-sm text-muted font-light mt-5 leading-relaxed">Mumbai's boutique luxury realty for Buy, Sell & Rent across Andheri, Juhu, Bandra & beyond.</p>
+        <div class="flex gap-2 mt-5">
+          <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full border border-line bg-white flex items-center justify-center hover:bg-ink hover:text-white transition-all text-sm">IG</a>
+          <a href="https://wa.me/919820115353" target="_blank" class="w-10 h-10 rounded-full border border-line bg-white flex items-center justify-center hover:bg-ink hover:text-white transition-all text-sm">WA</a>
+          <a href="tel:+919820115353" class="w-10 h-10 rounded-full border border-line bg-white flex items-center justify-center hover:bg-ink hover:text-white transition-all text-sm">☎</a>
+          <a href="#" class="w-10 h-10 rounded-full border border-line bg-white flex items-center justify-center hover:bg-ink hover:text-white transition-all text-sm">YT</a>
+        </div>
+      </div>
+      <div><p class="text-[11px] tracking-[0.25em] font-bold">EXPLORE</p><ul class="mt-4 space-y-2.5 text-sm font-light text-ink/70"><li><a href="#featured" data-scroll class="hover:text-black">Featured Properties</a></li><li><a href="#services" data-scroll class="hover:text-black">Buy / Sell / Rent</a></li><li><a href="#locations" data-scroll class="hover:text-black">Locations</a></li><li><a href="#showcase" data-scroll class="hover:text-black">Showcase</a></li><li><a href="#reels" data-scroll class="hover:text-black">Reels</a></li></ul></div>
+      <div><p class="text-[11px] tracking-[0.25em] font-bold">TOP LOCATIONS</p><ul class="mt-4 space-y-2.5 text-sm font-light text-ink/70"><li><a href="#locations" data-scroll class="hover:text-black">Andheri West</a></li><li><a href="#locations" data-scroll class="hover:text-black">Juhu Sea Face</a></li><li><a href="#locations" data-scroll class="hover:text-black">Bandra West</a></li><li><a href="#locations" data-scroll class="hover:text-black">Versova • Lokhandwala</a></li><li><a href="#locations" data-scroll class="hover:text-black">Powai • Goregaon</a></li></ul></div>
+      <div><p class="text-[11px] tracking-[0.25em] font-bold">GET MARKET UPDATES</p><p class="text-sm font-light text-muted mt-4">New launches & price drops, twice a month.</p><div class="flex gap-2 mt-4"><input id="newsEmail" type="email" placeholder="Email address" class="lux-input flex-1 rounded-full px-5 py-3 text-sm bg-white"><button onclick="subscribe()" class="w-12 h-12 rounded-full bg-ink text-white flex items-center justify-center hover:bg-black shrink-0">→</button></div><p class="text-[11px] text-muted mt-3">MahaRERA: A51900000053</p></div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-7 text-[12px] text-muted font-light">
+      <p>© 2026 Andheri Juhu Property 53 • Real Estate Mumbai. All rights reserved.</p>
+      <p>Crafted with care in Mumbai • Privacy • Terms • Sitemap</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="fixed bottom-5 right-5 z-[70] flex flex-col gap-3 items-end">
+  <a href="tel:+919820115353" class="magnetic group flex items-center gap-2 bg-white border border-line shadow-xl rounded-full pl-2 pr-2 py-2 hover:pr-5 transition-all">
+    <span class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+    <span class="max-w-0 overflow-hidden group-hover:max-w-[100px] transition-all text-sm font-semibold whitespace-nowrap">Call Now</span>
+  </a>
+  <a href="https://wa.me/919820115353?text=Hi%20Property%2053%2C%20I%27m%20interested%20in%20a%20property" target="_blank" class="magnetic wa-pulse flex items-center gap-2 bg-[#25D366] text-white shadow-xl rounded-full pl-2 pr-5 py-2">
+    <span class="w-11 h-11 rounded-full bg-white/20 flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.9 7c0 5.45-4.45 9.87-9.9 9.87m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.47-8.41"/></svg></span>
+    <span class="text-sm font-semibold">WhatsApp</span>
+  </a>
+</div>
+
+<!-- PROPERTY MODAL -->
+<div id="propModal" class="fixed inset-0 z-[95] hidden items-center justify-center p-4 modal-bg" onclick="if(event.target===this)closeModal('propModal')">
+  <div class="modal-panel bg-white rounded-[28px] max-w-4xl w-full max-h-[92vh] overflow-y-auto no-scrollbar">
+    <div class="relative h-[320px] md:h-[400px]">
+      <img id="mImg" src="" class="w-full h-full object-cover" alt="">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      <button onclick="closeModal('propModal')" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 backdrop-blur flex items-center justify-center hover:bg-white">✕</button>
+      <div class="absolute bottom-5 left-6 right-6 flex flex-wrap items-end justify-between gap-3">
+        <div><span id="mTag" class="text-[11px] tracking-widest bg-white text-ink px-4 py-1.5 rounded-full font-bold"></span><h3 id="mTitle" class="font-serif text-white text-3xl md:text-4xl mt-2"></h3><p id="mLoc" class="text-white/70 text-sm"></p></div>
+        <p id="mPrice" class="font-serif text-white text-3xl"></p>
+      </div>
+    </div>
+    <div class="p-6 md:p-8 grid md:grid-cols-[1fr_300px] gap-8">
+      <div>
+        <div id="mSpecs" class="flex flex-wrap gap-2"></div>
+        <p id="mDesc" class="text-[15px] font-light text-ink/70 leading-relaxed mt-5"></p>
+        <div class="grid grid-cols-2 gap-3 mt-6 text-sm font-light">
+          <div class="bg-cream rounded-xl p-4">✓ Clear Title & OC Received</div>
+          <div class="bg-cream rounded-xl p-4">✓ Loan Eligible — All Banks</div>
+          <div class="bg-cream rounded-xl p-4">✓ Gated Society + Parking</div>
+          <div class="bg-cream rounded-xl p-4">✓ Immediate Site Visit Possible</div>
+        </div>
+      </div>
+      <div class="bg-cream rounded-2xl p-6 h-fit">
+        <p class="font-semibold">Schedule a Visit</p><p class="text-xs text-muted mt-1">Free cab pickup in Andheri–Juhu</p>
+        <input id="mName" type="text" placeholder="Your name" class="lux-input w-full mt-4 rounded-xl px-4 py-3 text-sm bg-white">
+        <input id="mPhone" type="tel" placeholder="Phone number" class="lux-input w-full mt-2 rounded-xl px-4 py-3 text-sm bg-white">
+        <button onclick="bookVisit()" class="w-full bg-ink text-white py-3.5 rounded-full text-sm font-semibold mt-3 hover:bg-black">Book on WhatsApp</button>
+        <a href="tel:+919820115353" class="block text-center w-full border border-ink/15 py-3.5 rounded-full text-sm font-semibold mt-2 hover:bg-white">Call +91 98201 15353</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ENQUIRY MODAL -->
+<div id="enqModal" class="fixed inset-0 z-[95] hidden items-center justify-center p-4 modal-bg" onclick="if(event.target===this)closeModal('enqModal')">
+  <div class="modal-panel bg-white rounded-[28px] max-w-md w-full p-8">
+    <button onclick="closeModal('enqModal')" class="float-right w-10 h-10 rounded-full bg-cream flex items-center justify-center">✕</button>
+    <p class="text-[11px] tracking-[0.3em] text-muted font-semibold">QUICK ENQUIRY</p>
+    <h3 id="enqTitle" class="font-serif text-3xl mt-2">Enquire Now</h3>
+    <input id="eName" type="text" placeholder="Your name *" class="lux-input w-full mt-5 rounded-xl px-4 py-3.5 text-sm">
+    <input id="ePhone" type="tel" placeholder="Phone *" class="lux-input w-full mt-3 rounded-xl px-4 py-3.5 text-sm">
+    <textarea id="eMsg" rows="3" placeholder="Requirement details..." class="lux-input w-full mt-3 rounded-xl px-4 py-3.5 text-sm resize-none"></textarea>
+    <button onclick="submitEnquiry()" class="w-full bg-ink text-white py-4 rounded-full text-sm font-semibold mt-4 hover:bg-black">Send via WhatsApp →</button>
+  </div>
+</div>
+
+<!-- VALUATION MODAL -->
+<div id="valModal" class="fixed inset-0 z-[95] hidden items-center justify-center p-4 modal-bg" onclick="if(event.target===this)closeModal('valModal')">
+  <div class="modal-panel bg-white rounded-[28px] max-w-md w-full p-8">
+    <button onclick="closeModal('valModal')" class="float-right w-10 h-10 rounded-full bg-cream flex items-center justify-center">✕</button>
+    <p class="text-[11px] tracking-[0.3em] text-gold font-bold">FREE • 24 HRS</p>
+    <h3 class="font-serif text-3xl mt-2">Home Valuation</h3>
+    <p class="text-sm text-muted font-light">Instant estimate based on live Andheri–Juhu rates.</p>
+    <label class="text-[11px] tracking-widest text-muted font-semibold block mt-5">LOCATION</label>
+    <select id="vLoc" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm"><option>Andheri West</option><option>Juhu</option><option>Bandra West</option><option>Versova</option><option>Powai</option><option>Goregaon</option></select>
+    <label class="text-[11px] tracking-widest text-muted font-semibold block mt-4">CARPET AREA (SQ.FT)</label>
+    <input id="vArea" type="number" value="1200" min="200" max="10000" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm" oninput="calcVal()">
+    <label class="text-[11px] tracking-widest text-muted font-semibold block mt-4">CONFIGURATION</label>
+    <select id="vBhk" class="lux-input w-full mt-2 rounded-xl px-4 py-3.5 text-sm" onchange="calcVal()"><option>2 BHK</option><option selected>3 BHK</option><option>4 BHK</option><option>Penthouse / Villa</option></select>
+    <div class="bg-ink text-white rounded-2xl p-5 mt-5 text-center"><p class="text-[11px] tracking-widest text-white/50">ESTIMATED VALUE</p><p id="vOut" class="font-serif text-4xl mt-1">₹2.88 Cr</p><p id="vRate" class="text-xs text-white/50 mt-1">₹24,000 / sq.ft</p></div>
+    <button onclick="submitValuation()" class="w-full gold-gradient text-ink py-4 rounded-full text-sm font-bold mt-4">Get Exact Report on WhatsApp</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 translate-y-10 opacity-0 z-[96] bg-ink text-white text-sm px-6 py-3.5 rounded-full shadow-2xl flex items-center gap-2 pointer-events-none whitespace-nowrap">
+  <span class="w-2 h-2 rounded-full bg-green-400"></span><span id="toastMsg">Done</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+/* ---------- DATA ---------- */
+const PROPERTIES = [
+  {id:1,title:"Sea-View Sky Villa",loc:"Juhu Tara Road, Juhu",price:"₹8.5 Cr",priceCr:8.5,purpose:"Buy",type:"Penthouse",beds:4,baths:5,area:"3,200 sq.ft",tag:"FOR SALE • SEA VIEW",img:"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop",desc:"Corner sky villa with wraparound sunset deck, double-height living and unobstructed Arabian Sea views. Italian marble, private elevator lobby, 2 covered parks. One of Juhu's finest trophy addresses."},
+  {id:2,title:"Minimal Designer Apartment",loc:"DN Nagar, Andheri West",price:"₹3.25 Cr",priceCr:3.25,purpose:"Buy",type:"Apartment",beds:3,baths:3,area:"1,450 sq.ft",tag:"FOR SALE • READY",img:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop",desc:"Architect-designed 3BHK with oak floors, fluted panels and a calm Japandi palette. Higher floor, metro 2 min, podium amenities. Ideal end-use or high-rent investment."},
+  {id:3,title:"Luxury Garden Duplex",loc:"Versova, Andheri West",price:"₹2.1 L/mo",priceCr:0,purpose:"Rent",type:"Villa",beds:3,baths:4,area:"2,100 sq.ft",tag:"FOR RENT • DUPLEX",img:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",desc:"Sun-filled duplex with private garden, outdoor deck and servant room. Fully furnished by a celebrity designer. 5 min to Versova beach. Pet friendly, immediate possession."},
+  {id:4,title:"Corporate Office Suite",loc:"MIDC, Andheri East",price:"₹1.85 L/mo",priceCr:3.1,purpose:"Commercial",type:"Commercial",beds:"—",baths:2,area:"2,400 sq.ft",tag:"PRE-LEASED • 7.2% YIELD",img:"https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop",desc:"Grade-A fitted office with MNC tenant on 9-year lease. 7.2% rental yield, 15% escalation every 3 years. Ideal for investors seeking stable Mumbai commercial income."},
+  {id:5,title:"Sunset Infinity Penthouse",loc:"Pali Hill, Bandra West",price:"₹14.5 Cr",priceCr:14.5,purpose:"Buy",type:"Penthouse",beds:5,baths:6,area:"4,800 sq.ft",tag:"FOR SALE • PENTHOUSE",img:"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop",desc:"Crown penthouse with private infinity pool, home theatre and 360° city-to-sea views. Concierge building, 4 parks. Pali Hill's most photographed residence."},
+  {id:6,title:"Smart 2BHK Investment",loc:"Goregaon West",price:"₹1.65 Cr",priceCr:1.65,purpose:"Buy",type:"Apartment",beds:2,baths:2,area:"720 sq.ft",tag:"FOR SALE • HIGH ROI",img:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1000&auto=format&fit=crop",desc:"High-floor smart 2BHK near Link Road with metro connectivity. Strong rental demand from Film City & Mindspace professionals. Perfect first investment."},
+  {id:7,title:"Beachside Bungalow",loc:"Juhu Sea Face",price:"₹6.5 L/mo",priceCr:0,purpose:"Rent",type:"Villa",beds:4,baths:5,area:"5,000 sq.ft",tag:"FOR RENT • BUNGALOW",img:"https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1000&auto=format&fit=crop",desc:"Rare standalone bungalow steps from Juhu beach. Private lawn, gazebo, staff quarters and sea breeze in every room. Available for long lease, corporates welcome."},
+  {id:8,title:"High-Street Retail",loc:"Lokhandwala, Andheri",price:"₹4.2 Cr",priceCr:4.2,purpose:"Commercial",type:"Commercial",beds:"—",baths:1,area:"850 sq.ft",tag:"COMMERCIAL • RETAIL",img:"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop",desc:"Ground-floor retail on Lokhandwala's busiest high-street. 22ft frontage, double height, leased to premium F&B at ₹2.4L/mo. Exceptional capital upside."},
+  {id:9,title:"Cozy Design Studio",loc:"Veera Desai, Andheri West",price:"₹55 K/mo",priceCr:0,purpose:"Rent",type:"Apartment",beds:1,baths:1,area:"480 sq.ft",tag:"FOR RENT • STUDIO",img:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1000&auto=format&fit=crop",desc:"Beautifully done studio for young professionals. Fully furnished, housekeeping, power backup, 2 min to Azad Nagar metro. Move in with just a suitcase."}
+];
+
+const REELS = [
+  {img:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=600&auto=format&fit=crop",title:"₹8.5Cr Juhu Sea Villa Tour 🌊",views:"2.4M",dur:"0:42"},
+  {img:"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=600&auto=format&fit=crop",title:"3BHK Andheri Under ₹3.3Cr?!",views:"890K",dur:"0:35"},
+  {img:"https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=600&auto=format&fit=crop",title:"Bandra Penthouse Pool Reveal",views:"1.7M",dur:"0:51"},
+  {img:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=600&auto=format&fit=crop",title:"Rental that broke the internet",views:"640K",dur:"0:29"},
+  {img:"https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=600&auto=format&fit=crop",title:"Office that pays YOU 7.2%",views:"410K",dur:"0:38"},
+  {img:"https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=600&auto=format&fit=crop",title:"Versova Duplex Garden Home",views:"980K",dur:"0:44"}
+];
+
+const TESTIS = [
+  {name:"Rohan & Priya Malhotra",role:"Bought 3BHK • Andheri West",img:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",text:"They showed us 6 verified options in 2 days and negotiated ₹18L below asking. Legal, loan, registration — everything was handled. It genuinely felt like family helping us buy."},
+  {name:"Farah Khan",role:"Sold Villa • Juhu",img:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",text:"Their reel of my villa crossed 1M views and we closed 12% above market in 3 weeks. Cinematic marketing is real — Property 53 understands luxury buyers like no one else."},
+  {name:"Aditya Deshmukh",role:"Leased Office • Andheri East",img:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",text:"As a founder, time is money. They shortlisted 3 pre-leased assets with clean titles and rental math done. Closed a 7% yield deal without a single site wasted."},
+  {name:"Sarah D'Souza",role:"Rented Duplex • Versova",img:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",text:"Shifted from London and they arranged video tours, police verification and furnishing before I landed. Most professional brokers I've dealt with anywhere in the world."}
+];
+
+/* ---------- LENIS SMOOTH SCROLL ---------- */
+let lenis;
+try{
+  lenis = new Lenis({ duration:1.25, smoothWheel:true });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add((t)=> lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+}catch(e){}
+
+function scrollToTarget(sel){
+  const el = document.querySelector(sel);
+  if(!el) return;
+  if(lenis) lenis.scrollTo(el,{offset:-70,duration:1.4});
+  else el.scrollIntoView({behavior:'smooth'});
+}
+document.querySelectorAll('[data-scroll]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const href=a.getAttribute('href');
+    if(href && href.startsWith('#')){ e.preventDefault(); closeMobile(); scrollToTarget(href==='#top'?'body':href); }
+  });
+});
+
+/* ---------- PRELOADER ---------- */
+let pct=0;
+const bar=document.getElementById('loaderBar'), pctEl=document.getElementById('loaderPct');
+const loadInt=setInterval(()=>{
+  pct+=Math.random()*14;
+  if(pct>=100){pct=100;clearInterval(loadInt);finishLoad();}
+  bar.style.transform=`scaleX(${pct/100})`; pctEl.textContent=Math.floor(pct)+'%';
+},120);
+
+function finishLoad(){
+  setTimeout(()=>{
+    document.getElementById('preloader').classList.add('done');
+    heroIntro();
+    setTimeout(()=>document.getElementById('preloader').style.display='none',1100);
+  },300);
+}
+
+/* ---------- HERO INTRO ---------- */
+function splitLines(){
+  document.querySelectorAll('.hero-line').forEach(line=>{
+    const html=line.innerHTML;
+    // simple: wrap words for animation preserving inner spans
+    line.style.transform='translateY(110%)'; line.style.opacity='0';
+  });
+}
+splitLines();
+function heroIntro(){
+  const tl=gsap.timeline();
+  tl.to('#heroBg',{opacity:1,scale:1,duration:2,ease:'power2.out'},0)
+    .to('.hero-line',{y:0,opacity:1,duration:1.3,stagger:0.15,ease:'power4.out',
+      onStart(){ document.querySelectorAll('.hero-line').forEach(l=>{l.style.transform='';}); }
+    },0.2)
+    .to('.hero-fade',{opacity:1,y:0,duration:1,stagger:0.12,ease:'power3.out'},0.7);
+  gsap.set('.hero-fade',{y:24});
+  tl.to('.hero-fade',{y:0},0.7);
+}
+
+/* ---------- NAV / PROGRESS / CURSOR ---------- */
+const nav=document.getElementById('nav');
+let lastY=0;
+function onScrollUI(){
+  const y=window.scrollY;
+  nav.classList.toggle('scrolled',y>60);
+  if(y>500 && y>lastY+5) nav.classList.add('hidden-nav'); else if(y<lastY-5) nav.classList.remove('hidden-nav');
+  lastY=y;
+  const h=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('progressBar').style.transform=`scaleX(${h?y/h:0})`;
+}
+window.addEventListener('scroll',onScrollUI,{passive:true});
+if(lenis) lenis.on('scroll',onScrollUI);
+
+const dot=document.getElementById('cursor-dot'), ring=document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function ringLoop(){rx+=(mx-rx)*0.14;ry+=(my-ry)*0.14;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ringLoop);})();
+document.addEventListener('mouseover',e=>{ if(e.target.closest('a,button,.loc-card,.prop-card,.reel-card')) ring.classList.add('hovering'); });
+document.addEventListener('mouseout',e=>{ if(e.target.closest('a,button,.loc-card,.prop-card,.reel-card')) ring.classList.remove('hovering'); });
+
+/* Magnetic */
+document.addEventListener('mousemove',e=>{
+  document.querySelectorAll('.magnetic').forEach(btn=>{
+    const r=btn.getBoundingClientRect();
+    const cx=r.left+r.width/2, cy=r.top+r.height/2;
+    const dx=e.clientX-cx, dy=e.clientY-cy;
+    const dist=Math.hypot(dx,dy);
+    if(dist<120) btn.style.transform=`translate(${dx*0.18}px,${dy*0.18}px)`;
+    else btn.style.transform='translate(0,0)';
+  });
+});
+
+/* Tilt */
+function attachTilt(){
+  document.querySelectorAll('.tilt').forEach(card=>{
+    card.onmousemove=e=>{
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-0.5, y=(e.clientY-r.top)/r.height-0.5;
+      card.style.transform=`perspective(1000px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-6px)`;
+    };
+    card.onmouseleave=()=>card.style.transform='perspective(1000px) rotateY(0) rotateX(0)';
+  });
+}
+
+/* Scroll reveals + parallax */
+function initAnims(){
+  gsap.utils.toArray('[data-reveal]').forEach(el=>{
+    gsap.fromTo(el,{y:50,opacity:0,filter:'blur(6px)'},{y:0,opacity:1,filter:'blur(0px)',duration:1.1,ease:'power3.out',
+      scrollTrigger:{trigger:el,start:'top 88%'}});
+  });
+  gsap.utils.toArray('[data-parallax]').forEach(img=>{
+    gsap.fromTo(img,{yPercent:-10},{yPercent:10,ease:'none',scrollTrigger:{trigger:img.parentElement,scrub:1,start:'top bottom',end:'bottom top'}});
+  });
+  gsap.to('#heroBg',{yPercent:18,ease:'none',scrollTrigger:{trigger:'#top',scrub:1,start:'top top',end:'bottom top'}});
+  // counters
+  document.querySelectorAll('.counter').forEach(c=>{
+    const target=+c.dataset.target;
+    ScrollTrigger.create({trigger:c,start:'top 92%',once:true,onEnter:()=>{
+      gsap.fromTo(c,{innerText:0},{innerText:target,duration:1.8,snap:{innerText:1},ease:'power2.out'});
+    }});
+  });
+}
+
+/* ---------- PROPERTIES GRID ---------- */
+let currentTab='all';
+function propCard(p,i){
+  return `<article class="prop-card tilt bg-white rounded-[24px] overflow-hidden border border-line cursor-pointer" onclick="openProperty(${p.id})" style="opacity:0;transform:translateY(40px)">
+    <div class="relative h-[260px] overflow-hidden">
+      <img src="${p.img}" loading="lazy" class="w-full h-full object-cover" alt="${p.title}">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+      <span class="absolute top-4 left-4 text-[10px] tracking-[0.15em] font-bold px-3.5 py-2 rounded-full ${p.purpose==='Rent'?'bg-white text-ink':'bg-ink text-white'}">${p.tag}</span>
+      <button onclick="event.stopPropagation();quickWA('${p.title}','${p.price}')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all" title="WhatsApp">✆</button>
+      <span class="absolute bottom-4 left-4 text-white font-serif text-2xl drop-shadow">${p.price}</span>
+      <span class="absolute bottom-4 right-4 text-white/80 text-[11px] tracking-widest bg-white/15 backdrop-blur px-3 py-1.5 rounded-full">${p.type.toUpperCase()}</span>
+    </div>
+    <div class="p-6">
+      <h3 class="font-serif text-2xl leading-tight">${p.title}</h3>
+      <p class="text-muted text-[13px] font-light mt-1 flex items-center gap-1">◎ ${p.loc}</p>
+      <div class="flex items-center gap-4 mt-4 pt-4 border-t border-line text-[13px] text-ink/70">
+        <span><b>${p.beds}</b> Bed</span><span class="text-line">|</span><span><b>${p.baths}</b> Bath</span><span class="text-line">|</span><span><b>${p.area}</b></span>
+      </div>
+      <div class="flex gap-2 mt-5">
+        <span class="flex-1 text-center bg-ink text-white text-[13px] font-semibold py-3 rounded-full">View Details</span>
+        <span class="flex-1 text-center border border-line text-[13px] font-semibold py-3 rounded-full">Site Visit</span>
+      </div>
+    </div>
+  </article>`;
+}
+function renderProps(list){
+  const grid=document.getElementById('propGrid');
+  grid.innerHTML=list.map(propCard).join('');
+  document.getElementById('noResult').classList.toggle('hidden',list.length>0);
+  document.getElementById('searchCount').textContent=list.length;
+  gsap.to('#propGrid article',{opacity:1,y:0,duration:0.9,stagger:0.08,ease:'power3.out'});
+  attachTilt();
+}
+function getFiltered(){
+  const pur=document.getElementById('fPurpose').value;
+  const loc=document.getElementById('fLocation').value;
+  const typ=document.getElementById('fType').value;
+  const bud=document.getElementById('fBudget').value;
+  let list=[...PROPERTIES];
+  const tabPur = currentTab==='all'? pur : currentTab;
+  if(tabPur!=='all') list=list.filter(p=>p.purpose===tabPur);
+  if(loc!=='all') list=list.filter(p=>p.loc.includes(loc.split(' ')[0]) || (loc==='Andheri West'&&p.loc.includes('Andheri')) || (loc==='Bandra West'&&p.loc.includes('Bandra')));
+  if(typ!=='all') list=list.filter(p=>p.type===typ);
+  if(bud==='under2') list=list.filter(p=>p.priceCr>0&&p.priceCr<2);
+  if(bud==='2-5') list=list.filter(p=>p.priceCr>=2&&p.priceCr<=5);
+  if(bud==='5-10') list=list.filter(p=>p.priceCr>5&&p.priceCr<=10);
+  if(bud==='10plus') list=list.filter(p=>p.priceCr>10);
+  if(bud==='rent') list=list.filter(p=>p.purpose==='Rent');
+  return list;
+}
+function applySearch(scroll=false){
+  renderProps(getFiltered());
+  if(scroll) scrollToTarget('#featured');
+  toast(`Showing ${getFiltered().length} properties`);
+}
+function setTab(btn,val){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active'); currentTab=val; applySearch(false);
+}
+function resetFilters(){
+  document.getElementById('fPurpose').value='all';document.getElementById('fLocation').value='all';
+  document.getElementById('fType').value='all';document.getElementById('fBudget').value='all';
+  currentTab='all';document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
+  applySearch(false);
+}
+function filterAndGo(purpose,type,loc){
+  if(purpose) document.getElementById('fPurpose').value=purpose;
+  if(type) document.getElementById('fType').value=type;
+  if(loc) document.getElementById('fLocation').value=loc;
+  currentTab = (purpose && purpose!=='all') ? purpose : 'all';
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.filter===currentTab));
+  applySearch(true);
+}
+
+/* ---------- MODALS ---------- */
+let currentProp=null;
+function openModal(id){const m=document.getElementById(id);m.classList.remove('hidden');m.classList.add('flex');requestAnimationFrame(()=>m.classList.add('modal-open'));if(lenis)lenis.stop();}
+function closeModal(id){const m=document.getElementById(id);m.classList.remove('modal-open');setTimeout(()=>{m.classList.add('hidden');m.classList.remove('flex');},350);if(lenis)lenis.start();}
+function openProperty(id){
+  const p=PROPERTIES.find(x=>x.id===id); if(!p)return; currentProp=p;
+  document.getElementById('mImg').src=p.img;
+  document.getElementById('mTag').textContent=p.tag;
+  document.getElementById('mTitle').textContent=p.title;
+  document.getElementById('mLoc').textContent=p.loc;
+  document.getElementById('mPrice').textContent=p.price;
+  document.getElementById('mDesc').textContent=p.desc;
+  document.getElementById('mSpecs').innerHTML=[`${p.beds} Bedrooms`,`${p.baths} Bathrooms`,p.area,p.type,p.purpose].map(s=>`<span class="text-xs bg-cream border border-line px-4 py-2 rounded-full">${s}</span>`).join('');
+  openModal('propModal');
+}
+function bookVisit(){
+  const n=document.getElementById('mName').value||'Guest', ph=document.getElementById('mPhone').value||'';
+  const msg=`Hi Property 53, I'm ${n} (${ph}). I'd like to schedule a site visit for ${currentProp.title} (${currentProp.loc}) at ${currentProp.price}.`;
+  window.open('https://wa.me/919820115353?text='+encodeURIComponent(msg),'_blank');
+  toast('Opening WhatsApp to confirm visit'); closeModal('propModal');
+}
+function quickWA(title,price){
+  window.open('https://wa.me/919820115353?text='+encodeURIComponent(`Hi, I'm interested in ${title} at ${price}. Please share details.`),'_blank');
+}
+let enqCtx='General Enquiry';
+function openEnquiry(ctx){enqCtx=ctx;document.getElementById('enqTitle').textContent=ctx;openModal('enqModal');}
+function submitEnquiry(){
+  const n=document.getElementById('eName').value, ph=document.getElementById('ePhone').value, m=document.getElementById('eMsg').value;
+  if(!n||!ph){toast('Please add name & phone');return;}
+  window.open('https://wa.me/919820115353?text='+encodeURIComponent(`Hi Property 53 — ${enqCtx}\nName: ${n}\nPhone: ${ph}\nDetails: ${m}`),'_blank');
+  toast('Enquiry sent — we reply in minutes'); closeModal('enqModal');
+}
+/* Valuation */
+const RATES={'Andheri West':24000,'Juhu':42000,'Bandra West':48000,'Versova':26000,'Powai':21000,'Goregaon':16500};
+function openValuation(){calcVal();openModal('valModal');}
+function calcVal(){
+  const loc=document.getElementById('vLoc').value, area=+document.getElementById('vArea').value||0;
+  const bhk=document.getElementById('vBhk').value;
+  let rate=RATES[loc]||22000;
+  if(bhk.includes('Penthouse')) rate*=1.25; if(bhk.includes('4')) rate*=1.08;
+  const val=area*rate, cr=(val/10000000).toFixed(2);
+  document.getElementById('vOut').textContent='₹'+cr+' Cr';
+  document.getElementById('vRate').textContent='₹'+Math.round(rate).toLocaleString('en-IN')+' / sq.ft • '+loc;
+}
+function submitValuation(){
+  const loc=document.getElementById('vLoc').value, area=document.getElementById('vArea').value, est=document.getElementById('vOut').textContent;
+  window.open('https://wa.me/919820115353?text='+encodeURIComponent(`Hi, I want to SELL my property.\nLocation: ${loc}\nArea: ${area} sq.ft\nOnline estimate: ${est}\nPlease send exact valuation report.`),'_blank');
+  toast('Valuation request sent'); closeModal('valModal');
+}
+
+/* ---------- REELS ---------- */
+function renderReels(){
+  document.getElementById('reelsRow').innerHTML=REELS.map((r,i)=>`
+    <div class="reel-card group relative shrink-0 w-[220px] md:w-[250px] h-[380px] md:h-[440px] rounded-[22px] overflow-hidden cursor-pointer border border-white/10" onclick="openReel(${i})">
+      <img src="${r.img}" loading="lazy" class="w-full h-full object-cover kenburns group-hover:scale-110 transition-transform duration-700" alt="">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/30"></div>
+      <div class="absolute top-3 left-3 right-3 flex justify-between items-center">
+        <span class="text-[10px] bg-black/50 backdrop-blur px-3 py-1.5 rounded-full tracking-widest flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>REEL</span>
+        <span class="text-[10px] bg-black/50 backdrop-blur px-3 py-1.5 rounded-full">${r.dur}</span>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <span class="w-14 h-14 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-xl group-hover:scale-110 group-hover:bg-white group-hover:text-black transition-all">▶</span>
+      </div>
+      <div class="absolute bottom-0 p-4 w-full">
+        <div class="h-[2px] bg-white/20 rounded-full mb-3 overflow-hidden"><div class="reel-progress h-full bg-white w-0"></div></div>
+        <p class="text-[13px] font-medium leading-snug">${r.title}</p>
+        <p class="text-white/60 text-xs mt-1.5 flex items-center gap-2">👁 ${r.views} views <span>•</span> ♥ ${(parseFloat(r.views)*0.08).toFixed(0)}K</p>
+      </div>
+    </div>`).join('');
+  // activate first reel progress
+  const first=document.querySelector('.reel-card'); if(first) first.classList.add('reel-active');
+}
+function scrollReels(dir){document.getElementById('reelsRow').scrollBy({left:dir*280,behavior:'smooth'});}
+function openReel(i){
+  document.querySelectorAll('.reel-card').forEach((c,j)=>c.classList.toggle('reel-active',i===j));
+  const r=REELS[i];
+  window.open('https://wa.me/919820115353?text='+encodeURIComponent(`Hi, I saw your reel "${r.title}" — please share full details & price.`),'_blank');
+  toast('Opening details for this reel home');
+}
+
+/* ---------- TESTIMONIALS ---------- */
+let tIdx=0, tTimer;
+function renderTesti(){
+  document.getElementById('testiTrack').innerHTML=TESTIS.map(t=>`
+    <div class="min-w-full p-8 md:p-14 text-center">
+      <p class="text-gold tracking-[0.3em] text-sm">★★★★★</p>
+      <p class="font-serif text-2xl md:text-[2rem] leading-snug font-light mt-5 max-w-3xl mx-auto italic">"${t.text}"</p>
+      <div class="flex items-center justify-center gap-4 mt-8">
+        <img src="${t.img}" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow" alt="">
+        <div class="text-left"><p class="font-semibold text-sm">${t.name}</p><p class="text-muted text-xs">${t.role}</p></div>
+      </div>
+    </div>`).join('');
+  document.getElementById('testiDots').innerHTML=TESTIS.map((_,i)=>`<button onclick="goTesti(${i})" class="tdot h-2 rounded-full transition-all ${i===0?'w-8 bg-ink':'w-2 bg-ink/15'}"></button>`).join('');
+  autoTesti();
+}
+function goTesti(i){tIdx=(i+TESTIS.length)%TESTIS.length;document.getElementById('testiTrack').style.transform=`translateX(-${tIdx*100}%)`;
+  document.querySelectorAll('.tdot').forEach((d,j)=>{d.className=`tdot h-2 rounded-full transition-all ${j===tIdx?'w-8 bg-ink':'w-2 bg-ink/15'}`;});}
+function moveTesti(d){goTesti(tIdx+d);clearInterval(tTimer);autoTesti();}
+function autoTesti(){clearInterval(tTimer);tTimer=setInterval(()=>goTesti(tIdx+1),5000);}
+
+/* ---------- FORMS / MISC ---------- */
+function submitLead(e){
+  e.preventDefault();
+  const n=document.getElementById('leadName').value, ph=document.getElementById('leadPhone').value;
+  const pur=document.querySelector('input[name=purpose]:checked').value;
+  const loc=document.getElementById('leadLoc').value, bud=document.getElementById('leadBudget').value, msg=document.getElementById('leadMsg').value;
+  if(!n||!ph){toast('Please fill name & phone');return;}
+  window.open('https://wa.me/919820115353?text='+encodeURIComponent(`New Lead — Property 53 Website\nName: ${n}\nPhone: ${ph}\nIntent: ${pur}\nLocation: ${loc}\nBudget: ${bud}\nMessage: ${msg}`),'_blank');
+  toast('Lead sent! Check WhatsApp'); e.target.reset();
+}
+function subscribe(){
+  const em=document.getElementById('newsEmail').value;
+  if(!em||!em.includes('@')){toast('Enter a valid email');return;}
+  toast('Subscribed — welcome to the inner circle'); document.getElementById('newsEmail').value='';
+}
+let toastTO;
+function toast(msg){
+  const t=document.getElementById('toast');
+  document.getElementById('toastMsg').textContent=msg;
+  t.style.opacity='1';t.style.transform='translate(-50%,0)';
+  clearTimeout(toastTO);toastTO=setTimeout(()=>{t.style.opacity='0';t.style.transform='translate(-50%,40px)';},2600);
+}
+
+/* Mobile menu */
+const mm=document.getElementById('mobileMenu');
+document.getElementById('menuBtn').onclick=()=>{mm.classList.remove('hidden');mm.classList.add('flex');if(lenis)lenis.stop();};
+function closeMobile(){mm.classList.add('hidden');mm.classList.remove('flex');if(lenis)lenis.start();}
+document.getElementById('menuClose').onclick=closeMobile;
+
+/* Filter selects live */
+['fPurpose','fLocation','fType','fBudget'].forEach(id=>document.getElementById(id).addEventListener('change',()=>applySearch(false)));
+
+/* Init */
+renderProps(PROPERTIES);
+renderReels();
+renderTesti();
+attachTilt();
+window.addEventListener('load',()=>{initAnims();ScrollTrigger.refresh();});
+setTimeout(()=>{initAnims();ScrollTrigger.refresh();},1800);
+
+// Reel drag-to-scroll
+(()=>{const el=document.getElementById('reelsRow');let down=false,sx=0,sl=0;
+el.addEventListener('pointerdown',e=>{down=true;sx=e.clientX;sl=el.scrollLeft;});
+window.addEventListener('pointermove',e=>{if(down)el.scrollLeft=sl-(e.clientX-sx);});
+window.addEventListener('pointerup',()=>down=false);})();
+</script>
+</body>
+</html>
